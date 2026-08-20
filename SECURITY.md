@@ -1,6 +1,6 @@
 # Security Policy
 
-At **IITDEVELOPER**, security, data privacy, and operational integrity are paramount. We appreciate the responsible disclosure of security vulnerabilities by security researchers, engineers, and community members.
+At **IITDEVELOPER**, security, data privacy, and operational integrity are paramount engineering principles. We appreciate the responsible disclosure of security vulnerabilities by security researchers, engineers, and community members.
 
 ---
 
@@ -23,11 +23,13 @@ We provide security updates and patches for active flagship platforms and major 
 
 **DO NOT report security vulnerabilities through public GitHub issues, pull requests, or discussions.**
 
-If you believe you have discovered a security vulnerability in any IITDEVELOPER repository or service, please report it privately:
+If you believe you have discovered a security vulnerability in any IITDEVELOPER repository or service, please report it privately through our verified security contact:
 
-* **Primary Security Contact**: [security@iitdeveloper.com](mailto:security@iitdeveloper.com)
-* **General Fallback Contact**: [info@iitdeveloper.com](mailto:info@iitdeveloper.com)
+* **Primary Security Reporting Contact**: [info@iitdeveloper.com](mailto:info@iitdeveloper.com)
+* *(Future Dedicated Mailbox)*: `security@iitdeveloper.com` — recommended dedicated security inbox for future mailbox provisioning.
 * **Subject Line**: `[SECURITY VULNERABILITY] <Project/Repository Name> - <Brief Summary>`
+
+Where supported on public flagship repositories, you may also utilize **GitHub Private Vulnerability Reporting** via the repository Security tab.
 
 ### What to Include in Your Report
 
@@ -42,15 +44,14 @@ To help us triage and resolve the issue quickly, please provide:
 
 ## ⏱️ Response & Triage Process
 
-1. **Acknowledgment**: We aim to acknowledge receipt of your vulnerability report within **48 hours**.
-2. **Assessment & Validation**: Our platform engineering team will validate and assess severity within **5 business days**.
-3. **Remediation**: Validated critical issues will be prioritized for remediation and deployed promptly.
-4. **Public Disclosure / Credit**: We coordinate public disclosure with the reporter once a fix is released. We gladly credit researchers who follow responsible disclosure practices.
+* **Prompt Acknowledgment**: We aim to acknowledge valid security reports promptly and will provide updates as investigation progresses.
+* **Assessment & Remediation**: Our engineering team validates the report, assesses technical severity, and prioritizes remediation on protected development branches.
+* **Coordinated Disclosure**: We coordinate public disclosure with the reporter once a fix is released. We gladly credit researchers who follow responsible disclosure practices.
 
 ---
 
 ## 🔒 Security Best Practices for Contributors
 
 * Never commit API keys, database credentials, SSH private keys, or `.env` files containing live secrets.
-* Always use environment variables and GitHub Action Secrets for credential management.
+* Always use environment variables and GitHub Actions Secrets for credential management.
 * Enable two-factor authentication (2FA) on your GitHub account.

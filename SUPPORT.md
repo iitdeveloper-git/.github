@@ -20,8 +20,9 @@ For commercial inquiries, enterprise deployments, bespoke engineering, or SLA-ba
 
 ### 3. Security Inquiries
 For security disclosures and vulnerability reports:
+* **DO NOT** open a public issue.
 * Follow the guidelines in our [Security Policy](./SECURITY.md).
-* Direct email: [security@iitdeveloper.com](mailto:security@iitdeveloper.com) (or [info@iitdeveloper.com](mailto:info@iitdeveloper.com)).
+* Direct email: [info@iitdeveloper.com](mailto:info@iitdeveloper.com) (Subject: `[SECURITY VULNERABILITY]`).
 
 ---
 

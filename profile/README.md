@@ -13,34 +13,10 @@
 
 ## 🏛️ About IITDEVELOPER
 
-IITDEVELOPER engineers intelligent software platforms, AI systems, automation infrastructure, and cloud-native products using disciplined modern engineering practices. We bridge deep platform engineering, robust systems architecture, and cutting-edge artificial intelligence into resilient, production-ready solutions.
+IITDEVELOPER engineers intelligent software platforms, AI systems, automation infrastructure, and cloud-native products using disciplined modern engineering practices. We bridge deep platform engineering, robust systems architecture, and artificial intelligence into resilient, production-ready solutions.
 
 ```
-AI Engineering  •  Software Platforms  •  Cloud-Native DevOps  •  Security & Standards
-```
-
----
-
-## 🚀 Flagship Platforms & Products
-
-| Platform | Domain | Description | Verified Tech Stack |
-| :--- | :--- | :--- | :--- |
-| [**Growixa**](https://github.com/iitdeveloper-git/demo_website_growixa) | AI Growth & Marketing | AI-powered growth acceleration and marketing automation platform | Next.js, React, TypeScript, TailwindCSS |
-| [**IITD IAM**](https://github.com/iitdeveloper-git/iam) | Identity & Access | Enterprise-ready Identity and Access Management platform with multi-tenant RBAC & OIDC | FastAPI, Python, Keycloak, PostgreSQL, Redis, Next.js |
-| [**GNS**](https://github.com/iitdeveloper-git/ett_gns) | Platform Services | Generic Notification Service supporting resilient multi-channel event-driven messaging | Python, FastAPI, RabbitMQ, Redis, Background Workers |
-| [**Shared Workflows**](https://github.com/iitdeveloper-git/iitdeveloper-git-shared-workflows) | DevOps / Platform | Reusable GitHub Actions CI/CD workflows and automated deployment notifications | GitHub Actions, Python, Telegram API, Docker |
-
----
-
-## 🛠️ Core Engineering Stack
-
-```
-Languages       Python  •  TypeScript  •  JavaScript  •  HTML5/CSS3
-Backend         FastAPI  •  Node.js  •  REST APIs  •  AsyncIO
-Frontend        Next.js  •  React  •  TailwindCSS  •  Astro
-Data & Events   PostgreSQL  •  Redis  •  RabbitMQ  •  SQLAlchemy
-Identity & Sec  Keycloak  •  OIDC / OAuth2  •  JWT  •  RBAC
-DevOps & Cloud  Docker  •  Docker Compose  •  GitHub Actions  •  HuggingFace  •  Netlify
+AI Engineering  •  Software Platforms  •  Cloud-Native DevOps  •  Automation
 ```
 
 ---
@@ -52,31 +28,74 @@ DevOps & Cloud  Docker  •  Docker Compose  •  GitHub Actions  •  HuggingFa
 * Retrieval-Augmented Generation (RAG) pipelines and knowledge search
 * Intelligent workflow automation and prompt engineering frameworks
 
-### 🏗️ Software Platforms & SaaS
+### 🏗️ Software Platforms
 * Enterprise SaaS backends and high-concurrency microservices
 * Interactive dashboards and responsive modern web applications
 * Domain-specific platform portals and scalable APIs
 
-### ⚙️ Platform Engineering & Shared Services
+### ⚙️ Platform Engineering
 * Centralized identity, authentication, and authorization infrastructure (IITD IAM)
 * Event-driven multi-channel notification and alert pipelines (GNS)
-* Standardized developer tooling and reusable CI/CD workflow automation
+* Reusable CI/CD workflow automation and developer tooling
 
-### 🛡️ Cloud, DevOps & DevSecOps
+### 🛡️ Cloud & DevOps
 * Containerized deployments via Docker and cloud-agnostic orchestrators
 * Automated testing, linting, security scanning, and release pipelines
 * Principle of least privilege, secret protection, and reproducible builds
 
 ---
 
-## 🤖 AI-Assisted Engineering Philosophy
+## 🚀 Flagship Platforms
 
-At IITDEVELOPER, we leverage AI coding agents (such as Claude, OpenAI Codex, and Antigravity) to accelerate research, prototyping, test generation, and documentation. However, we uphold a strict **human-in-the-loop** engineering standard:
+| Platform | Domain | Description | Verified Tech Stack |
+| :--- | :--- | :--- | :--- |
+| [**Growixa**](https://github.com/iitdeveloper-git/demo_website_growixa) | AI Growth & Marketing | AI-powered growth acceleration and marketing automation platform | Next.js, React, TypeScript, TailwindCSS |
+| [**IITD IAM**](https://github.com/iitdeveloper-git/iam) | Identity & Access | Enterprise Identity and Access Management platform with Keycloak OIDC & role authorization | FastAPI, Python, Keycloak, PostgreSQL, Redis, Next.js |
+| [**GNS**](https://github.com/iitdeveloper-git/ett_gns) | Platform Services | Generic Notification Service supporting resilient multi-channel event-driven messaging | Python, FastAPI, RabbitMQ, Redis, Background Workers |
+| [**Shared Workflows**](https://github.com/iitdeveloper-git/iitdeveloper-git-shared-workflows) | DevOps / Platform | Reusable GitHub Actions CI/CD workflows and automated deployment notifications | GitHub Actions, Python, Telegram API, Docker |
+
+---
+
+## 🛠️ Engineering Capabilities
+
+* **Microservices & API Design**: High-throughput asynchronous backend architectures using FastAPI and modern Python.
+* **Modern Frontend Craft**: Interactive, accessible web applications built with Next.js, React, and TypeScript.
+* **Identity Architecture**: Centralized authentication, Keycloak integration, OIDC token validation, and RBAC control planes.
+* **Event-Driven Messaging**: Resilient asynchronous task distribution using RabbitMQ and Redis.
+* **DevOps & Infrastructure as Code**: Multi-stage Docker containerization, GitHub Actions automation, and zero-trust security baselines.
+
+---
+
+## 💻 Technology Stack
+
+```
+Languages       Python  •  TypeScript  •  JavaScript  •  HTML5/CSS3
+Backend         FastAPI  •  Node.js  •  REST APIs  •  AsyncIO
+Frontend        Next.js  •  React  •  TailwindCSS  •  Astro
+Data & Events   PostgreSQL  •  Redis  •  RabbitMQ  •  SQLAlchemy
+Identity & Sec  Keycloak  •  OIDC / OAuth2  •  JWT  •  RBAC
+DevOps & Cloud  Docker  •  Docker Compose  •  GitHub Actions
+```
+
+---
+
+## 🤖 AI-Assisted Engineering
+
+At IITDEVELOPER, we leverage AI coding agents (Claude, Codex, Antigravity) to accelerate research, prototyping, test generation, and documentation. We uphold a strict **human-in-the-loop** engineering standard:
 
 * **AI Agents Assist With:** Initial boilerplate scaffolding, exploratory research, unit test generation, repetitive refactoring, and documentation drafting.
 * **Human Engineers Own:** Architecture design, authentication & authorization security, data integrity, cryptographic operations, pull request reviews, and production release authorizations.
 
 *Explore our full [AI Engineering Standard](../docs/AI_ENGINEERING_STANDARD.md).*
+
+---
+
+## 🔄 Currently Building
+
+* 🚀 **Growixa** — AI-driven growth canvas and marketing intelligence platform.
+* 🔐 **IITD IAM** — Enterprise identity and authorization control plane.
+* 📨 **GNS** — Event-driven notification dispatch pipeline.
+* ⚙️ **Platform Infrastructure** — Organization-wide reusable workflows and DevSecOps baselines.
 
 ---
 
@@ -89,15 +108,6 @@ At IITDEVELOPER, we leverage AI coding agents (such as Claude, OpenAI Codex, and
 5. **Architecture Before Complexity**: Clear domain separation and clean interfaces before adding third-party dependencies.
 6. **Test Before Release**: Automated linting, static analysis, and test suites gating every integration branch.
 7. **Reusable Platforms Over Duplication**: Centralized services (IAM, GNS, shared workflows) powering all client and internal products.
-
----
-
-## 🔄 Currently Building
-
-* 🚀 **Growixa** — AI-driven growth canvas and marketing intelligence platform.
-* 🔐 **IITD IAM** — Next-generation multi-tenant identity and authorization control plane.
-* 📨 **GNS** — Event-driven notification dispatch pipeline.
-* ⚙️ **Platform Infrastructure** — Organization-wide reusable workflows and DevSecOps baselines.
 
 ---
 
@@ -114,11 +124,11 @@ At IITDEVELOPER, we leverage AI coding agents (such as Claude, OpenAI Codex, and
 
 ---
 
-## 🤝 Community & Contact
+## 🤝 Contact
 
 * **Website**: [iitdeveloper.com](https://iitdeveloper.com)
 * **General Inquiries**: [info@iitdeveloper.com](mailto:info@iitdeveloper.com)
-* **Security Reports**: [security@iitdeveloper.com](mailto:security@iitdeveloper.com) (or [info@iitdeveloper.com](mailto:info@iitdeveloper.com))
+* **Security Reporting**: [info@iitdeveloper.com](mailto:info@iitdeveloper.com) (Please review our [Security Policy](../SECURITY.md))
 * **Contributing**: Please review our [Contributing Guidelines](../CONTRIBUTING.md) and [Code of Conduct](../CODE_OF_CONDUCT.md).
 
 ---

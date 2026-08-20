@@ -1,8 +1,8 @@
 blank_issues_enabled: false
 contact_links:
-  - name: "🔒 Security Vulnerability Reporting"
-    url: "mailto:security@iitdeveloper.com"
-    about: "Report security vulnerabilities privately and securely directly to our platform security team."
-  - name: "💬 General Enterprise Inquiries & Support"
+  - name: "🔒 Security Vulnerability Reporting (Private)"
+    url: "mailto:info@iitdeveloper.com"
+    about: "Do not disclose security vulnerabilities through public GitHub issues. Email info@iitdeveloper.com following our Security Policy."
+  - name: "💬 General Enterprise Inquiries & Consulting"
     url: "https://iitdeveloper.com"
-    about: "For commercial partnerships, consulting, and enterprise platform support."
+    about: "For commercial partnerships, platform architecture, and enterprise consulting."

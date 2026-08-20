@@ -17,56 +17,69 @@ A repository is evaluated as an **Archive Candidate** if it meets one or more of
 
 ### 1. `demo_wisdom-wings-public-school`
 * **Repository**: `demo_wisdom-wings-public-school`
-* **Reason**: Initial demonstration mock for a client school website. A dedicated production repository `wisdom-wings-public-school` exists with refined assets and finalized code.
-* **Last Meaningful Activity**: July 5, 2026
-* **Replacement / Canonical Version**: `https://github.com/iitdeveloper-git/wisdom-wings-public-school`
-* **Risk**: Low. Ensure no unique client assets or historical branches exist that aren't merged into the main repo.
-* **Recommendation**: **ARCHIVE CANDIDATE** (or make private). Mark README with a deprecation notice pointing to `wisdom-wings-public-school`.
+* **WHY**: Initial demonstration mock for a client school website. A dedicated production repository `wisdom-wings-public-school` exists with finalized assets and clean code.
+* **REPLACEMENT**: `https://github.com/iitdeveloper-git/wisdom-wings-public-school`
+* **DEPENDENCIES**: Static HTML/CSS/JS assets.
+* **DEPLOYMENTS**: Static web hosting / Netlify staging demo.
+* **NETLIFY / Vercel / CI Dependencies**: Check if any live staging subdomain points to this repository's webhooks.
+* **CLIENT IMPACT**: None once DNS points to the production repository deployment.
+* **RISK**: Low. Verify all custom media assets are preserved in `wisdom-wings-public-school`.
+* **Recommendation**: **ARCHIVE CANDIDATE** (Make read-only / archive after webhook audit).
 
 ---
 
 ### 2. `demo_shriji_mandapam`
 * **Repository**: `demo_shriji_mandapam`
-* **Reason**: Direct duplicate of `Shri-Ji-Mandapam` created during demo staging. Both contain identical Next.js frontend codebases.
-* **Last Meaningful Activity**: July 23, 2026
-* **Replacement / Canonical Version**: `https://github.com/iitdeveloper-git/Shri-Ji-Mandapam`
-* **Risk**: Very Low. Codebase is an identical clone.
-* **Recommendation**: **ARCHIVE CANDIDATE** (or delete/make private after verifying DNS/deployment webhooks).
+* **WHY**: Direct clone of `Shri-Ji-Mandapam` created for client preview staging. Both contain identical Next.js frontend codebases.
+* **REPLACEMENT**: `https://github.com/iitdeveloper-git/Shri-Ji-Mandapam`
+* **DEPENDENCIES**: Next.js 14, React, TailwindCSS.
+* **DEPLOYMENTS**: Vercel preview deployment.
+* **NETLIFY / Vercel / CI Dependencies**: Verify whether Vercel preview URLs are bound to this specific repo.
+* **CLIENT IMPACT**: None if canonical domain points to `Shri-Ji-Mandapam`.
+* **RISK**: Very Low.
+* **Recommendation**: **ARCHIVE CANDIDATE** (Archive after verifying domain redirects).
 
 ---
 
 ### 3. `ett-frontend`
 * **Repository**: `ett-frontend`
-* **Reason**: Legacy initial Next.js scaffold for the early Oryne prototype. Unmodified since November 2025. Contains default `create-next-app` boilerplate with early design notes.
-* **Last Meaningful Activity**: November 11, 2025
-* **Replacement / Canonical Version**: Modern platform architectures under `iam` and `ett_gns`.
-* **Risk**: Low. Ensure design notes in `docs/` are archived or migrated to company knowledge base.
-* **Recommendation**: **ARCHIVE CANDIDATE**. Archive repository with read-only status.
+* **WHY**: Legacy initial Next.js scaffold for the early Oryne prototype. Unmodified since November 2025. Contains default `create-next-app` boilerplate with early design notes.
+* **REPLACEMENT**: Modern platform architectures under `iam` and `ett_gns`.
+* **DEPENDENCIES**: Legacy Node dependencies.
+* **DEPLOYMENTS**: None active.
+* **NETLIFY / Vercel / CI Dependencies**: None.
+* **CLIENT IMPACT**: None. Internal architectural notes already documented.
+* **RISK**: Low.
+* **Recommendation**: **ARCHIVE CANDIDATE** (Archive with read-only status).
 
 ---
 
 ### 4. `oryne_web`
 * **Repository**: `oryne_web`
-* **Reason**: Single HTML landing page and architecture markdown file for legacy Oryne project. Unmodified since April 2026.
-* **Last Meaningful Activity**: April 25, 2026
-* **Replacement / Canonical Version**: Current IITDEVELOPER website and platform services.
-* **Risk**: Very Low.
-* **Recommendation**: **ARCHIVE CANDIDATE**. Mark as archived read-only showcase or consolidate docs into internal archive.
+* **WHY**: Single HTML landing page and architecture markdown file for legacy Oryne project. Unmodified since April 2026.
+* **REPLACEMENT**: Current IITDEVELOPER website (`iitdeveloper-website`).
+* **DEPENDENCIES**: Standalone static HTML file.
+* **DEPLOYMENTS**: None active.
+* **NETLIFY / Vercel / CI Dependencies**: None.
+* **CLIENT IMPACT**: None.
+* **RISK**: Very Low.
+* **Recommendation**: **ARCHIVE CANDIDATE** (Archive with read-only status).
 
 ---
 
-## ⚠️ Client Repository Separation Strategy
+## ⚠️ Client Repository Governance & Safety
 
-Several repositories in the organization represent client projects:
+Several repositories in the organization represent client deliverables:
 * `demo_hospital1` (AarogyaCare ERP)
-* `demo_hospital2` (Cardiology doctor portfolio)
+* `demo_hospital2` (Doctor portfolio)
 * `hotel_demo1` / `hotel_demo2` (Hotel booking showcase)
 * `Shyama-Public-School`
 * `wisdom-wings-public-school`
 * `ghar-ka-dabba`
 * `Shri-Ji-Mandapam`
+* `pulsarip` (Intellectual Property & Legal Services platform)
 
-### Recommended Action Plan for Client Repos:
-1. **Sanitization Pass**: Verify that no live SMTP credentials, database passwords, or customer PII exist in `.env`, `.env.example`, or commit history.
-2. **Classification**: Group under a dedicated "Client Showcases" section or transition to an internal `iitdeveloper-client-delivery` organization/team structure.
-3. **Branding**: Ensure each repository has an informative README attributing IITDEVELOPER as the engineering architect.
+### Recommended Action Plan:
+1. **Sanitization Pass**: Verify that no live SMTP credentials, database passwords, or customer PII exist in `.env` or commit history.
+2. **Classification**: Group under a dedicated client showcase section or migrate to private repositories upon client contract requirements.
+3. **Attribution**: Ensure each repository has an informative README attributing IITDEVELOPER as the platform engineering architect.

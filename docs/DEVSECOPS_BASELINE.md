@@ -1,6 +1,6 @@
 # IITDEVELOPER DevSecOps Baseline Controls
 
-**Version**: 1.0  
+**Version**: 1.1  
 **Status**: Organization Standard  
 **Scope**: All repositories in `iitdeveloper-git`  
 
@@ -21,9 +21,11 @@ This standard defines the baseline security, code quality, dependency hygiene, a
 
 | Control Category | Control Name | Tier | Enforcement Mechanism |
 | :--- | :--- | :--- | :--- |
-| **Source Integrity** | Branch Protection on `main` / `master` | **REQUIRED** | GitHub Branch Protection Rules |
+| **Source Integrity** | GitHub Ruleset on Default Branch (`main` / `master`) | **REQUIRED** | GitHub Organization / Repo Rulesets |
 | **Source Integrity** | Minimum 1 Approving Review | **REQUIRED** | Branch Protection Settings |
-| **Source Integrity** | Linear Git History / Conventional Commits | **RECOMMENDED** | Repository Setting / Git Hook |
+| **Source Integrity** | Dismiss Stale Pull Request Approvals | **REQUIRED** | Ruleset setting |
+| **Source Integrity** | Block Force Pushes & Branch Deletions | **REQUIRED** | Ruleset setting |
+| **Source Integrity** | Require Conversation Resolution | **REQUIRED** | Ruleset setting |
 | **Permissions** | Least Privilege Actions Permissions (`contents: read`) | **REQUIRED** | Workflow `permissions` block |
 | **Secret Protection** | Secret Scanning & Push Protection | **REQUIRED** | GitHub Organization Security Settings |
 | **Secret Protection** | Zero Plaintext Credentials in Commits | **REQUIRED** | Automated pre-commit / CI scanner |
@@ -32,18 +34,40 @@ This standard defines the baseline security, code quality, dependency hygiene, a
 | **Dependencies** | Dependabot Version & Security Updates | **REQUIRED** | `.github/dependabot.yml` |
 | **Dependencies** | Pull Request Dependency Review | **RECOMMENDED** | GitHub Actions (`dependency-review.yml`) |
 | **Containers** | Multi-stage Docker Builds with Non-root User | **REQUIRED** | Dockerfile best practices |
-| **Containers** | Container Vulnerability Scanning (Trivy / Snyk) | **RECOMMENDED** | CI Container Build Stage |
+| **Containers** | Container Vulnerability Scanning | **RECOMMENDED** | CI Container Build Stage |
 | **Ownership** | Code Ownership (`CODEOWNERS`) | **RECOMMENDED** | `.github/CODEOWNERS` |
 | **Supply Chain** | Software Bill of Materials (SBOM) Generation | **OPTIONAL** | GitHub Actions Release workflow |
 | **Releases** | Semantic Versioning & Signed Git Tags | **REQUIRED** | Release workflow (`vX.Y.Z`) |
 
 ---
 
+## 🔒 GitHub Organization Rulesets Baseline
+
+For all Tier-1 flagship repositories (`iam`, `ett_gns`, `demo_website_growixa`, `iitdeveloper-website`, `iitdeveloper-git-shared-workflows`), organization owners should configure a GitHub Ruleset with the following enforcement parameters:
+
+1. **Target Branches**: Default branch (`~DEFAULT_BRANCH`).
+2. **Restrict Deletions & Force Pushes**: Enabled (No force pushing, no accidental branch deletions).
+3. **Require Pull Request Before Merging**:
+   - Required approvals: `1`
+   - Dismiss stale pull request approvals when new commits are pushed: `Enabled`
+   - Require conversation resolution before merging: `Enabled`
+4. **Require Status Checks to Pass**:
+   - Require branches to be up to date before merging: `Enabled`
+   - Status checks required: Linting, Unit Tests, Security scan.
+5. **Bypass Permissions**: Restrict bypass to organization owners only for emergency break-glass procedures.
+
+---
+
+## 👥 Organization Member Visibility
+
+We recommend that engineers and platform architects actively contributing to IITDEVELOPER make their organization membership **Public** on GitHub (under the `People` tab at `https://github.com/orgs/iitdeveloper-git/people`).
+* *Note*: Member privacy settings are strictly voluntary and managed individually by each engineer.
+
+---
+
 ## 📦 Dependabot Implementation Standard
 
 For active repositories, add `.github/dependabot.yml` configured with sensible polling cadences to minimize noise while patching critical vulnerabilities promptly.
-
-### Recommended `dependabot.yml` Specification:
 
 ```yaml
 version: 2
@@ -110,8 +134,6 @@ docker-compose*.yml    @iitdeveloper-git/devops-architects
 # Security and Community governance
 SECURITY.md            @iitdeveloper-git/security-response
 ```
-
-> *Note: If team handles have not yet been assigned in the organization, assign the organization owner or mark as `OWNER REQUIRED` until teams are populated.*
 
 ---
 

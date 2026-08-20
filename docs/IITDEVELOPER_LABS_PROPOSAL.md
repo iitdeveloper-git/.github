@@ -1,7 +1,7 @@
 # IITDEVELOPER Labs (`iitdeveloper-labs`) Strategic Proposal
 
 **Status**: Proposal / Architectural Blueprint  
-**Target Repository**: `iitdeveloper-git/iitdeveloper-labs` (or standalone monorepo)  
+**Target Repository**: `iitdeveloper-git/iitdeveloper-labs`  
 **Objective**: Establish a centralized hub for open-source AI engineering research, experimental platform prototypes, Model Context Protocol (MCP) servers, and autonomous DevOps agents.
 
 ---
@@ -14,12 +14,26 @@ IITDEVELOPER Labs serves as the public innovation laboratory of **IITDEVELOPER**
 
 ---
 
+## ⚠️ Launch Invariant: No Empty Shells
+
+> [!IMPORTANT]
+> **IITDEVELOPER Labs will NOT be created or pinned as an empty showcase repository.**
+> The repository will only be created and pinned once its initial flagship engineering artifact is built, verified, tested, and fully functional.
+
+### 🥇 Initial Launch Project: `AI Pull Request Reviewer`
+The first project published under Labs will be a functioning AI PR Reviewer:
+* **Capabilities**: Automates code analysis, OWASP security pattern detection, architectural invariant validation, and test coverage suggestions on GitHub pull requests.
+* **Technology**: Python 3.12, LangChain / LangGraph, GitHub REST API, Pydantic v2.
+* **Deliverable**: Packaged as a GitHub Action and a local CLI utility.
+
+---
+
 ## 🏗️ Proposed Monorepo Structure
 
 ```text
 iitdeveloper-labs/
 ├── ai-agents/                  # Autonomous task-oriented AI agent frameworks
-│   ├── pr-reviewer/            # Intelligent PR code & security review agent
+│   ├── pr-reviewer/            # Intelligent PR code & security review agent (Launch Project)
 │   └── incident-investigator/  # Automated log triage and root-cause analyzer
 ├── mcp-servers/                # Model Context Protocol integrations
 │   ├── mcp-devops-tools/       # MCP server for GitHub, Docker, and CI/CD operations
@@ -35,31 +49,20 @@ iitdeveloper-labs/
 
 ---
 
-## 💡 Flagship Lab Projects
+## 💡 Candidate Project Roadmap
 
-### 1. `pr-reviewer` — AI Pull Request Reviewer & Security Gate
-* **Goal**: A GitHub Action and standalone CLI that inspects PR diffs for architectural anti-patterns, OWASP vulnerabilities, breaking API changes, and missing test coverage.
-* **Stack**: Python, LangChain / LangGraph, GitHub REST API, Pydantic.
-
-### 2. `mcp-devops-tools` — Model Context Protocol Server for DevOps
-* **Goal**: Provide LLM coding agents (such as Claude, Codex, and Cursor) with secure, structured MCP tools to query container status, read CI workflow logs, and validate Dockerfiles.
-* **Stack**: TypeScript / Node.js, Model Context Protocol SDK.
-
-### 3. `incident-investigator` — Autonomous SRE Incident Triage Agent
-* **Goal**: Analyze real-time error traces and logs, correlate them with recent Git commits, and synthesize an incident diagnosis report.
-* **Stack**: Python, FastAPI, Redis, Vector Search.
-
-### 4. `rag-eval` — End-to-End RAG Quality Evaluator
-* **Goal**: Benchmark retrieval precision, context recall, and hallucination rates across enterprise documentation corpuses.
-* **Stack**: Python, LlamaIndex, Ragas, NumPy.
+1. **AI Pull Request Reviewer** *(Initial Launch)* — Static analysis + LLM security review action.
+2. **AI Incident Assistant** — Automated log correlation and root-cause triage.
+3. **RAG Evaluation Toolkit** — Semantic retrieval benchmarking and hallucination metrics.
+4. **Terraform Review Agent** — Infrastructure-as-code security and drift auditor.
+5. **Log Intelligence Assistant** — Anomaly detection for microservice log streams.
+6. **MCP DevOps Toolkit** — Model Context Protocol servers for Docker, GitHub Actions, and Kubernetes.
+7. **LLM Visibility Analyzer** — Token latency, prompt telemetry, and cost observability.
 
 ---
 
-## ⚖️ Governance & Release Standards
+## ⚖️ Governance & Open-Source Licensing
 
-To ensure IITDEVELOPER Labs represents genuine engineering excellence rather than empty marketing repositories:
-
-1. **No "Coming Soon" Empty Shells**: No subdirectory or project will be published to main without working code, functional unit tests, and complete documentation.
-2. **Reproducible Quick Starts**: Every subproject must provide a standalone Docker setup or one-command run script.
-3. **Open-Source License**: All Labs projects will be distributed under the permissive **Apache-2.0** or **MIT** license.
-4. **Community Contributions**: Labs will welcome external open-source contributors adhering to IITDEVELOPER's [Contributing Standard](../CONTRIBUTING.md).
+1. **Reproducible Quick Starts**: Every subproject must provide a standalone Docker setup or one-command run script.
+2. **Permissive Licensing**: All Labs projects will be distributed under the permissive **Apache-2.0** or **MIT** license.
+3. **Community Contributions**: Labs welcomes external open-source contributors adhering to IITDEVELOPER's [Contributing Standard](../CONTRIBUTING.md).
