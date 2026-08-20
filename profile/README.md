@@ -68,14 +68,14 @@ AI Engineering  •  Software Platforms  •  Cloud-Native DevOps  •  Automati
 
 ## 💻 Technology Stack
 
-```
-Languages       Python  •  TypeScript  •  JavaScript  •  HTML5/CSS3
-Backend         FastAPI  •  Node.js  •  REST APIs  •  AsyncIO
-Frontend        Next.js  •  React  •  TailwindCSS  •  Astro
-Data & Events   PostgreSQL  •  Redis  •  RabbitMQ  •  SQLAlchemy
-Identity & Sec  Keycloak  •  OIDC / OAuth2  •  JWT  •  RBAC
-DevOps & Cloud  Docker  •  Docker Compose  •  GitHub Actions
-```
+| Domain | Technologies & Frameworks |
+| :--- | :--- |
+| **Languages** | ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white) ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black) |
+| **Backend & APIs** | ![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white) ![Node.js](https://img.shields.io/badge/Node.js-5FA04E?style=flat-square&logo=nodedotjs&logoColor=white) |
+| **Frontend & UI** | ![Next.js](https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white) ![React](https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black) ![TailwindCSS](https://img.shields.io/badge/TailwindCSS-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white) ![Astro](https://img.shields.io/badge/Astro-BC52EE?style=flat-square&logo=astro&logoColor=white) |
+| **Data & Messaging** | ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white) ![Redis](https://img.shields.io/badge/Redis-FF4438?style=flat-square&logo=redis&logoColor=white) ![RabbitMQ](https://img.shields.io/badge/RabbitMQ-FF6600?style=flat-square&logo=rabbitmq&logoColor=white) |
+| **Identity & Security** | ![Keycloak](https://img.shields.io/badge/Keycloak-0083CA?style=flat-square&logo=keycloak&logoColor=white) ![OpenID Connect](https://img.shields.io/badge/OIDC-F89820?style=flat-square&logo=openid&logoColor=white) |
+| **DevOps & Cloud** | ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white) ![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white) |
 
 ---
 
