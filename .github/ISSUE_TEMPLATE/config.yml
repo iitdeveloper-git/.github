@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: "🔒 Security Vulnerability Reporting"
+    url: "mailto:security@iitdeveloper.com"
+    about: "Report security vulnerabilities privately and securely directly to our platform security team."
+  - name: "💬 General Enterprise Inquiries & Support"
+    url: "https://iitdeveloper.com"
+    about: "For commercial partnerships, consulting, and enterprise platform support."

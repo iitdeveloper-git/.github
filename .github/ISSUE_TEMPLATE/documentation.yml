@@ -1,0 +1,31 @@
+name: "📖 Documentation Improvement"
+description: "Suggest improvements, fixes, or additions to repository documentation"
+title: "[Docs]: "
+labels: ["documentation"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Accurate, high-quality documentation is critical to our engineering standard. Thank you for reporting docs issues!
+  - type: input
+    id: doc_url
+    attributes:
+      label: "Document Location"
+      description: "Path or URL to the document that needs attention"
+      placeholder: "e.g., docs/DEVSECOPS_BASELINE.md or README.md"
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: "What needs to be updated?"
+      description: "Explain what is missing, unclear, outdated, or incorrect."
+    validations:
+      required: true
+  - type: textarea
+    id: suggested_fix
+    attributes:
+      label: "Suggested Change / Content"
+      description: "Provide the proposed replacement text or outline if available."
+    validations:
+      required: false
