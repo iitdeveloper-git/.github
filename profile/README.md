@@ -7,7 +7,7 @@
 [![Website](https://img.shields.io/badge/Website-iitdeveloper.com-blue?style=flat-square&logo=googlechrome&logoColor=white)](https://iitdeveloper.com)
 [![Organization](https://img.shields.io/badge/GitHub-iitdeveloper--git-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/iitdeveloper-git)
 [![Contact](https://img.shields.io/badge/Contact-info%40iitdeveloper.com-green?style=flat-square&logo=maildotru&logoColor=white)](mailto:info@iitdeveloper.com)
-[![Engineering Standards](https://img.shields.io/badge/Standards-DevSecOps%20%7C%20CI%2FCD-orange?style=flat-square)](./docs/DEVSECOPS_BASELINE.md)
+[![Engineering Standards](https://img.shields.io/badge/Standards-DevSecOps%20%7C%20CI%2FCD-orange?style=flat-square)](../docs/DEVSECOPS_BASELINE.md)
 
 ---
 
@@ -76,7 +76,7 @@ At IITDEVELOPER, we leverage AI coding agents (such as Claude, OpenAI Codex, and
 * **AI Agents Assist With:** Initial boilerplate scaffolding, exploratory research, unit test generation, repetitive refactoring, and documentation drafting.
 * **Human Engineers Own:** Architecture design, authentication & authorization security, data integrity, cryptographic operations, pull request reviews, and production release authorizations.
 
-*Explore our full [AI Engineering Standard](./docs/AI_ENGINEERING_STANDARD.md).*
+*Explore our full [AI Engineering Standard](../docs/AI_ENGINEERING_STANDARD.md).*
 
 ---
 
@@ -103,14 +103,14 @@ At IITDEVELOPER, we leverage AI coding agents (such as Claude, OpenAI Codex, and
 
 ## 📚 Organization Standards & Governance
 
-* 📋 [Organization Audit & Health Report](./docs/GITHUB_ORG_AUDIT.md)
-* 📐 [Flagship Repository Standard](./docs/REPOSITORY_STANDARD.md)
-* 📌 [Recommended Pinned Repositories](./docs/PINNED_REPOSITORIES.md)
-* 🛡️ [DevSecOps Baseline Controls](./docs/DEVSECOPS_BASELINE.md)
-* 🤖 [AI-Assisted Engineering Standard](./docs/AI_ENGINEERING_STANDARD.md)
-* 🗄️ [Archive Candidate Review](./docs/ARCHIVE_CANDIDATES.md)
-* 🧪 [IITDEVELOPER Labs Proposal](./docs/IITDEVELOPER_LABS_PROPOSAL.md)
-* 📰 [Engineering Updates Format](./docs/ENGINEERING_UPDATES.md)
+* 📋 [Organization Audit & Health Report](../docs/GITHUB_ORG_AUDIT.md)
+* 📐 [Flagship Repository Standard](../docs/REPOSITORY_STANDARD.md)
+* 📌 [Recommended Pinned Repositories](../docs/PINNED_REPOSITORIES.md)
+* 🛡️ [DevSecOps Baseline Controls](../docs/DEVSECOPS_BASELINE.md)
+* 🤖 [AI-Assisted Engineering Standard](../docs/AI_ENGINEERING_STANDARD.md)
+* 🗄️ [Archive Candidate Review](../docs/ARCHIVE_CANDIDATES.md)
+* 🧪 [IITDEVELOPER Labs Proposal](../docs/IITDEVELOPER_LABS_PROPOSAL.md)
+* 📰 [Engineering Updates Format](../docs/ENGINEERING_UPDATES.md)
 
 ---
 
@@ -119,7 +119,7 @@ At IITDEVELOPER, we leverage AI coding agents (such as Claude, OpenAI Codex, and
 * **Website**: [iitdeveloper.com](https://iitdeveloper.com)
 * **General Inquiries**: [info@iitdeveloper.com](mailto:info@iitdeveloper.com)
 * **Security Reports**: [security@iitdeveloper.com](mailto:security@iitdeveloper.com) (or [info@iitdeveloper.com](mailto:info@iitdeveloper.com))
-* **Contributing**: Please review our [Contributing Guidelines](./CONTRIBUTING.md) and [Code of Conduct](./CODE_OF_CONDUCT.md).
+* **Contributing**: Please review our [Contributing Guidelines](../CONTRIBUTING.md) and [Code of Conduct](../CODE_OF_CONDUCT.md).
 
 ---
 

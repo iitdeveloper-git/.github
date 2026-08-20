@@ -48,7 +48,7 @@ This document outlines the standard structure and publication cadence for IITDEV
 
 ## 📚 Documentation & Developer Experience
 <!-- New architectural guides, API specs, developer standards -->
-- Added comprehensive [DevSecOps Baseline](./docs/DEVSECOPS_BASELINE.md).
+- Added comprehensive [DevSecOps Baseline](./DEVSECOPS_BASELINE.md).
 
 ## 🔮 What's Next for [Next Month]
 <!-- Planned engineering priorities and roadmap targets -->
