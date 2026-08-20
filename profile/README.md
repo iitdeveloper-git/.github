@@ -29,7 +29,7 @@ AI Engineering  •  Software Platforms  •  Cloud-Native DevOps  •  Automati
 * Intelligent workflow automation and prompt engineering frameworks
 
 ### 🏗️ Software Platforms
-* Enterprise SaaS backends and high-concurrency microservices
+* Scalable SaaS backends and asynchronous application services
 * Interactive dashboards and responsive modern web applications
 * Domain-specific platform portals and scalable APIs
 
@@ -62,7 +62,7 @@ AI Engineering  •  Software Platforms  •  Cloud-Native DevOps  •  Automati
 * **Modern Frontend Craft**: Interactive, accessible web applications built with Next.js, React, and TypeScript.
 * **Identity Architecture**: Centralized authentication, Keycloak integration, OIDC token validation, and RBAC control planes.
 * **Event-Driven Messaging**: Resilient asynchronous task distribution using RabbitMQ and Redis.
-* **DevOps & Infrastructure as Code**: Multi-stage Docker containerization, GitHub Actions automation, and zero-trust security baselines.
+* **DevOps & Infrastructure as Code**: Multi-stage Docker containerization, GitHub Actions automation, and least-privilege security and secure-by-default engineering practices.
 
 ---
 
