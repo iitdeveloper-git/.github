@@ -1,0 +1,10 @@
+{
+  "name": "Docker Build Verification",
+  "description": "Validates Dockerfile multi-stage builds and container caching across pull requests.",
+  "iconName": "docker",
+  "categories": [
+    "Docker",
+    "Containers",
+    "CI"
+  ]
+}

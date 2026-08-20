@@ -1,0 +1,10 @@
+{
+  "name": "Semantic Release & Changelog",
+  "description": "Automatically cuts GitHub releases and generates changelogs upon version tag pushes.",
+  "iconName": "tag",
+  "categories": [
+    "Release",
+    "Automation",
+    "CI/CD"
+  ]
+}

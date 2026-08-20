@@ -1,0 +1,9 @@
+{
+  "name": "Python CI Pipeline",
+  "description": "Standard Python linting (Ruff), testing (Pytest), and test coverage matrix for IITDEVELOPER backends.",
+  "iconName": "python",
+  "categories": [
+    "Python",
+    "CI"
+  ]
+}

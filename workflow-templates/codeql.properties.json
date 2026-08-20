@@ -1,0 +1,10 @@
+{
+  "name": "CodeQL Security Scan",
+  "description": "Automated static application security testing (SAST) for Python and TypeScript/JavaScript repositories.",
+  "iconName": "shield",
+  "categories": [
+    "Security",
+    "CodeQL",
+    "DevSecOps"
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "name": "Dependency Review",
+  "description": "Scans pull request dependency changes for known security vulnerabilities and license compliance.",
+  "iconName": "package",
+  "categories": [
+    "Security",
+    "Dependencies",
+    "DevSecOps"
+  ]
+}

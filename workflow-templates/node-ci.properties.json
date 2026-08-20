@@ -1,0 +1,10 @@
+{
+  "name": "Node.js & Next.js CI",
+  "description": "Standard Node.js / TypeScript linting, type-checking, testing, and production build verification for IITDEVELOPER web applications.",
+  "iconName": "node",
+  "categories": [
+    "Node",
+    "TypeScript",
+    "CI"
+  ]
+}
